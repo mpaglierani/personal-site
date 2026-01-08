@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />	
+	<title>// resume</title>
+	<meta name="description" content="Resume of Marguerite Paglierani — writing, design, and customer experience." />
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<style>
+	:root{
+		--bg:#0b0e14;
+		--panel:#0f1320;
+		--ink:#e6e6e6;
+		--muted:#9aa4b2;
+		--accent: #614CAE;
+		--rule:#1b2236;
+		--link:#73A9D9;
+		--link-h:#96C6D9;
+		--mono:-apple-system, SFMono-Regular, ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Courier New", monospace;
+		--sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+	}
+	@media (prefers-color-scheme: light){
+		:root{
+			--bg:#ffffff; --panel:#f6f7fb; --ink:#0d1321; --muted:#475569; --rule:#e6e8ef;
+		}
+	}
+
+	html,body{margin:0; padding:0; background:var(--bg); color:var(--ink);}
+	body{font-family:var(--mono); line-height:1.6; -webkit-font-smoothing:antialiased; font-size:clamp(14px,1.2vw,16px);}
+	.wrap{max-width:980px; margin:0 auto; padding:32px 20px 96px;}
+	header{display:grid; gap:8px; margin-bottom:24px;}
+	.name{font-size:clamp(28px,4.6vw,44px); font-weight:700; letter-spacing:.5px;}
+	.subtitle{color:var(--muted); font-size:clamp(14px,2.2vw,18px)}
+	.bar{height:1px; background:linear-gradient(90deg,var(--rule),transparent); margin:16px 0 24px;}
+	.panel{background:var(--panel); border:1px solid var(--rule); border-radius:14px; padding:20px 18px;}
+	aside.panel {font-size:clamp(12px,1vw,14px);}
+	.cols{display:grid; grid-template-columns:1fr; gap:18px;}
+	@media (min-width:880px){ .cols{grid-template-columns:375px 1fr;} }
+	a {color: var(--link); text-decoration: none; border-bottom: 1px dashed var(--rule);}
+	a:hover {color: var(--link-h);}
+
+	.label{color:var(--accent); text-transform:uppercase; letter-spacing:.12em; font-size:clamp(13px,1.3vw,15px); font-weight: 700; margin-bottom:6px}
+	.headline{font-weight:700;}
+	.kv{display:grid; gap:8px; font-family:var(--mono)}
+	.kv .row{display:flex; gap:10px; align-items:flex-start;}
+	.key{color:var(--muted); min-width:110px; font-size:clamp(12px,1vw,14px);}
+	.val a{color:var(--link); text-decoration:none; border-bottom:1px dashed var(--rule); font-size:clamp(12px,1vw,14px);}
+	.val a:hover{color:var(--link-h)}
+	.chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px}
+	.chip{font-size:clamp(12px,1vw,14px); padding:4px 10px; border-radius:999px; border:1px solid var(--rule); background:var(--ink); color:#ffffff}
+
+	section{margin:18px 0}
+	h2{font-size:clamp(13px,1.3vw,15px); text-transform:uppercase; letter-spacing:.14em; color:var(--accent); margin:0 0 8px}
+	.mono{font-family:var(--mono); white-space:normal; font-size:clamp(12px,1vw,14px); line-height:1.4}
+	.list{margin:16px 0 0; padding-left:18px; font-size:clamp(11px,1vw,13px);}
+	.list li{margin:3px 0}
+	.job{margin:14px 0; padding:12px 14px; border:1px dashed var(--rule); border-radius:10px}
+	.job .where{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:8px;}
+	.job .where .org, .job .where .role{font-size:clamp(14px,1.4vw,16px);}
+	.job .where .org{font-weight:700;}
+	.job .where .role{color:var(--muted);}
+	.job .meta{color:var(--muted); font-size:clamp(11px,1vw,13px);}
+	.option {display: flex; gap: 10px;}
+	.option code {min-width: 120px; color: var(--ink);}
+	#options p.mono {margin: 4px 0;}
+
+	.cmd{color:var(--link); font-size:clamp(13px,1.2vw,15px);}
+	code{color:#000; padding:4px 0; font-family:var(--mono); font-size:clamp(12px,1vw,14px);}
+
+	nav.toc{display:flex; flex-wrap:wrap; gap:10px; margin:8px 0 18px}
+	nav.toc a{font-size:clamp(11px,1vw,13px); color:var(--muted); text-decoration:none; border:1px solid var(--rule); border-radius:999px; padding:6px 10px}
+	nav.toc a:hover{color:var(--ink)}
+
+	.cta{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 0}
+	.btn{appearance:none; border:1px solid var(--rule); background:transparent; color:var(--ink); padding:8px 12px; border-radius:999px; font-family:var(--mono); cursor:pointer; font-size:clamp(12px,1vw,14px);}
+	.btn:hover{border-color:var(--accent)}
+
+	footer{margin-top:28px; color:var(--muted); font-size:clamp(11px,1vw,13px)}
+	.print-note{display:none}
+
+	@media print{
+		:root{ --bg:#fff; --panel:#fff; --ink:#000; --muted:#444; --rule:#ccc }
+		body{font-family:var(--sans); font-size:12px}
+		.panel, .btn, nav.toc{display:none}
+		.wrap{padding:0}
+		a{color:inherit; text-decoration:underline}
+		.print-note{display:block; margin-top:12px}
+		.job{border-color:#ddd}
+	}
+	</style>
+</head>
+	
+<body>
+	<div class="wrap">
+		<header>
+			<div class="name">marguerite paglierani</div>
+			<div class="subtitle">writer · grfx designer</div>
+
+			<nav class="toc" aria-label="Sections">
+				<a href="#synopsis">SYNOPSIS</a>
+				<a href="#description">DESCRIPTION</a>
+				<a href="#examples">EXAMPLES</a>
+				<a href="#options">OPTIONS</a>
+				<a href="#files">FILES</a>
+				<a href="#author">AUTHOR</a>
+			</nav>
+			<div class="bar"></div>
+		</header>
+
+		<div class="cols">
+			<aside class="panel" aria-label="Quick Info">
+				<div class="label">quick info</div>
+				<div class="kv">
+					<div class="row">
+						<div class="key">email</div>
+						<div class="val"><a href="mailto:m.paglierani@outlook.com" data-copy="m.paglierani@outlook.com" target="_blank">m.paglierani@outlook.com</a></div>
+					</div>
+					
+					<div class="row">
+						<div class="key">phone</div>
+						<div class="val"><a href="tel:+15084397741" data-copy="+1 (508) 439-7741">508.439.7741</a></div>
+					</div>
+					
+					<div class="row">
+						<div class="key">location</div>
+						<div class="val">boston, massachusetts</div>
+					</div>
+					
+					<div class="row">
+						<div class="key">linkedIn</div>
+						<div class="val"><a href="https://www.linkedin.com/in/marguerite-paglierani-8b6515183/" target="_blank">/in/marguerite-paglierani</a></div>
+					</div>
+					
+					<div class="row">
+						<div class="key">portfolio</div>
+						<div class="val"><a href="https://mpaglierani.neocities.org/" target="_blank">mpaglierani.neocities.org</a></div>
+					</div>
+				</div>
+
+				<section>
+					<h2>FOCUS</h2>
+					<div class="chips">
+						<span class="chip">creative writing</span>
+						<span class="chip">graphic design</span>
+						<span class="chip">web/html/css</span>
+						<span class="chip">microsoft 365</span>
+						<span class="chip">software testing</span>
+					</div>
+				</section>
+
+				<section>
+					<h2>EDUCATION</h2>
+					<div class="mono">
+						ba, english <br> 
+						— university of massachusetts, lowell <br>
+						2019–2023
+					</div>
+				</section>
+
+				<div class="cta">
+					<a href="resume.pdf" target="_blank" class="btn">view / download pdf</a>
+				</div>
+            </aside>
+
+
+			<main>
+				<section id="synopsis">
+					<h2>SYNOPSIS</h2>
+					<div class="mono">
+						<span class="cmd">$</span> <strong>marguerite</strong> [OPTIONS] <em>COMMAND</em> [ARG…]
+					</div>
+				</section>
+
+				<section id="description">
+					<h2>DESCRIPTION</h2>
+					<p class="mono">
+						marguerite is a writer and designer who blends an english background with web and visual craft.
+						she’s community-minded, curious, and comfortable at the intersection of story, structure, and interface—
+						aiming to make work that’s both empathetic and precise.
+					</p>
+				</section>
+				
+				<section id="options">
+					<h2>OPTIONS</h2>
+					<p class="mono option"><code>--writer</code> craft papers, poetry, and prose. develop voice, rhythm, and tone.</p>
+					<p class="mono option"><code>--designer</code> produce cohesive graphics and layouts, utilizing typography, color, and user experience.</p>
+					<p class="mono option"><code>--tools</code> adobe creative suite, m365 apps, figma, vs code</p>
+					<p class="mono option"><code>--languages</code> html, css, js, (basic) python</p>
+				</section>
+
+				<section id="examples">
+					<h2>EXAMPLES</h2>
+						<div class="job">
+							<div class="where">
+								<div class="org">eshare</div>
+								<span class="role">marketing &amp; graphic design</span>
+							</div>
+						<div class="meta">waltham, ma · jan 2025 — current</div>
+							<ul class="list">
+								<li>designing marketing materials, including social graphics, blog illustrations, and trade show materials.</li>
+								<li>producing demo and event videos using after effects and premiere pro.</li>
+								<li>supporting event marketing with pre-event emails, social announcements, and presentation graphics.</li>
+							</ul>
+						</div>
+					
+						<div class="job">
+							<div class="where">
+								<div class="org">eshare</div>
+								<span class="role">quality assurance intern</span>
+							</div>
+						<div class="meta">waltham, ma · sept 2025 — current</div>
+							<ul class="list">
+								<li>testing features for eshare teams and sharepoint integrations, focused on secure sharing, permissions, and governance workflows</li>
+								<li>documenting bugs and edge cases to ensure reliable functionality across m365 environments.</li>
+								<li>validated ui/ux changes for clarity and accessibility in collaboration tools.</li>
+							</ul>
+						</div>
+					
+						<div class="job">
+							<div class="where">
+								<div class="org">kmp bookkeeping</div>
+								<span class="role">data entry &amp; file archivist</span>
+							</div>
+							<div class="meta">massachusetts · jan 2021 — jan 2023</div>
+							<ul class="list">
+								<li>accurately input and maintain large data volumes, ensuring integrity and consistency.</li>
+								<li>protected confidentiality while meeting strict deadlines.</li>
+								<li>organized physical and digital archives with meticulous categorization.</li>
+							</ul>
+						</div>
+				</section>
+				
+				<section id="files">
+					<h2>FILES</h2>
+					<div class="mono">
+						[<a href="https://mpaglierani.neocities.org/" target="_blank">portfolio</a>] 
+						[<a href="https://mpaglierani.neocities.org/projects.html" target="_blank">projects</a>]
+					</div>
+				</section>
+
+				<section id="author">
+					<h2>AUTHOR</h2>
+					<div class="mono">
+						email: <a href="mailto:m.paglierani@outlook.com" data-copy="m.paglierani@outlook.com" target="_blank">m.paglierani@outlook.com</a> &nbsp;||&nbsp;
+						phone: <a href="tel:+15084397741" data-copy="+1 (508) 439-7741">1.508.439.7741</a> &nbsp;||&nbsp; massachusetts
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<footer>
+			<div class="bar"></div>
+			<div>© <script>document.write(new Date().getFullYear())</script> marguerite paglierani</div>
+		</footer>
+	</div>
+
+	<script>
+	function copy(text){
+		navigator.clipboard?.writeText(text).then(()=>{},()=>{});
+	}
+	document.querySelectorAll('[data-copy]').forEach(el=>{
+		el.addEventListener('click', e=>{
+			const t = el.getAttribute('data-copy'); copy(t);
+		})
+	});
+	document.getElementById('copyPage')?.addEventListener('click',()=>{
+		copy(location.href);
+	});
+	</script>
+</body>
+</html>

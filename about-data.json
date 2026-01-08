@@ -1,0 +1,34 @@
+{
+	"bubbles": [
+		{ "key": "colors",  "label": "colors" },
+		{ "key": "movies",  "label": "movies" },
+		{ "key": "socials", "label": "socials" },
+		{ "key": "pokemon", "label": "pokémon" }
+	],
+	"movies": [
+		{ "src": "img/videodrome.png", "title": "videodrome" },
+		{ "src": "img/interstellar.png", "title": "interstellar" },
+		{ "src": "img/lisa-frankenstein.png", "title": "lisa frankenstein" },
+		{ "src": "img/shrek2.png", "title": "shrek 2" }
+	],
+	"colors": [
+		{ "hex": "#614CAE" },
+		{ "hex": "#DBC7FF" },
+		{ "hex": "#02381B" },
+		{ "hex": "#B7E89C" },
+		{ "hex": "#E27396" }
+	],
+	"socials": [
+		{ "icon": "instagram.svg", "href": "https://www.instagram.com/margurrrite/" },
+		{ "icon": "github.svg", "href": "https://github.com/mpaglierani" },
+		{ "icon": "linkedin.svg", "href": "https://www.linkedin.com/in/marguerite-paglierani-8b6515183/" },
+		{ "icon": "letterboxd.svg", "href": "https://letterboxd.com/margurrrite/" },
+		{ "icon": "mail.svg", "href": "mailto:mpaglierani@outlook.com" }
+	],
+	"pokemon": [
+		{ "src": "img/oddish.png", "name": "oddish" },
+		{ "src": "img/poliwag.png", "name": "poliwag" },
+		{ "src": "img/shroomish.png", "name": "shroomish" },
+		{ "src": "img/drifloon.png", "name": "drifloon" }
+	]
+}

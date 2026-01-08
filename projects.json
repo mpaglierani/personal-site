@@ -1,0 +1,217 @@
+[
+	{
+		"id": "type-specimen",
+		"title": "typeface specimen",
+		"date": "summer 2023",
+		"description": [
+			"for this project, i examined the distinctive font family known as 'sansita.' even from the name, the font felt like a <b>refreshing</b> sip of cold orange juice on a sunny day. it was this idea that i tried to emulate in the visuals and informative pages of this specimen.",
+			"i used a <b>simple and purposeful</b> palette with bright shades of orange and soft blues. the intention was to intertwine visual appeal with an immesrive experience into the world of <b>'sansita.'</b>",
+			"created using adobe indesign"
+			],
+		"images": [
+			{
+			"src": "img/ts_spread1.png",
+			"caption": ""
+			},
+			{
+			"src": "img/ts_spread2.png",
+			"caption": ""
+			},
+			{
+			"src": "img/ts_spread3.png",
+			"caption": ""
+			}, 
+			{
+			"src": "img/ts_spread4.png",
+			"caption": ""
+			},
+			{
+			"src": "img/ts_spread5.png",
+			"caption": ""
+			},
+			{
+			"src": "img/ts_spread6.png",
+			"caption": ""
+			},
+			{
+			"src": "img/ts_spread7.png",
+			"caption": ""
+			}
+		]
+	},
+
+	{
+		"id": "app-redesign",
+		"title": "app redesign",
+		"date": "fall 2023",
+		"description": [
+			"for this project, i redesigned cashapp with a focus on improving user experience and <b>interactivity</b>. my goal was to maintain the core elements that make cashapp stand out from other money transfer apps while introducing features that users find most valuable",
+			"i created both light and dark mode versions, incorporating accent colors to highlight key areas and <b>improve usability</b>. rather than a complete rebrand, i aimed to enhance the existing design by addressing common user concerns, including feedback from my classmates. the result is a <b>refined, more intuitive interface</b> that builds on cashapp's strengths while making it even more user-friendly."
+			],
+		"images": [
+			{
+			"src": "img/cashapp_1.png",
+			"caption": "home page, now showing 5 favorite users, wallet buttons for ease of access, and \"feed\" of public transactions among friends"
+			},
+			{
+			"src": "img/cashapp_2.png",
+			"caption": "inside a payment, viewing comments, likes and description"
+			},
+			{
+			"src": "img/cashapp_3.png",
+			"caption": "showing a user profile, their recent public transactions and ability to pay or request directly"
+			},
+			{
+			"src": "img/cashapp_4.png",
+			"caption": "wallet page, showing usable cards and cryptocurrency available"
+			},
+			{
+			"src": "img/cashapp_5.png",
+			"caption": "pay/request page, select the user, search, or scan qr, favorite 5 easily accessible from top menu"
+			},
+			{
+			"src": "img/cashapp_6.png",
+			"caption": "payment page, calculator view, user's name and image viewable for accuracy, ability to add a second person to transaction"
+			},
+			{
+			"src": "img/cashapp_7.png",
+			"cap chattion": "split payment, multiple users-including self-all with amounts and names for accuracy"
+			}
+		]
+	},
+
+	{
+		"id": "the-shelf",
+		"title": "the shelf",
+		"date": "spring 2023",
+		"description": [
+			"<b>the shelf</b> was a personal website for logging and reviewing movies, tv shows, and books. i began working on this site in the fall of 2022 in intro to web design, and then enhanced it further in the spring in advanced web design, overhauling it and making it responsive to window size.",
+			"i went with a light pink theme, as it was my favorite color at the time, including brown for accents, giving a light feel to the site. the code ended up being massive and is hosted in an old state on github. below, you can see the brand styles and a few stills of the pages.",
+			"style guide made with adobe indesign, html drafted in dreamweaver, code currently hosted on <a href='https://the-shelf-preview.neocities.com' target='_blank'>neocities</a>"
+		],
+		"images": [
+			{
+			"src": "img/shelf_spread1.png",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_spread2.png",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_spread3.png",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_spread4.png",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_spread5.png",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_spread6.png",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_spread7.png",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_spread8.png",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_ss1.jpeg",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_ss2.jpeg",
+			"caption": ""
+			},
+			{
+			"src": "img/shelf_ss3.jpeg",
+			"caption": ""
+			}
+		]
+	},
+	
+	{
+		"id": "mercy",
+		"title": "mercy"
+	},
+
+	{
+		"id": "paper-doll",
+		"title": "paper doll"
+	}, 
+
+	{
+		"id": "girls",
+		"title": "girls"
+	}, 
+
+	{
+		"id": "passenger",
+		"title": "passenger"
+	}, 
+
+
+	{
+		"id": "collaboration-fabric",
+		"title": "collaboration fabric",
+		"date": "winter 2025",
+		"description": [
+			"a very large project i took on at eshare was creating an <b>animated explainer video</b> for the renaming of our product suite to 'the collaboration fabric.'",
+			"below are a few gifs, drafted animations, and a link to the full video which was created entirely in <b>adobe after effects</b> with no plugins!",
+			"<a href='' target='_blank'>.ᐟ full video</a>"
+		],
+		"images": [
+			{
+			"src": "img/cf_data.gif",
+			"caption": ""
+			},
+			{
+			"src": "img/cf_files.gif",
+			"caption": ""
+			},
+			{
+			"src": "img/cf_globe.gif",
+			"caption": ""
+			},
+			{
+			"src": "img/cf_fabric.gif",
+			"caption": "<i>draft</i> early light version of the 'fabric' made using cc ball action"
+			},
+			{
+			"src": "img/cf_title.gif",
+			"caption": "<i>draft</i> early light version of the title panel"
+			}
+		]
+	},	
+	
+	
+	{
+		"id": "",
+		"title": "",
+		"date": "",
+		"description": [
+			"",
+			""
+		],
+		"images": [
+			{
+			"src": "",
+			"caption": ""
+			},
+			{
+			"src": "",
+			"caption": ""
+			}
+		]
+	}
+	
+	
+	
+]
